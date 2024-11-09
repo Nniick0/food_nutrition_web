@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.navbar-brand, .nav-link, .dropdown-item {
+    color: white !important;
+    font-size: 20px;
+}
+.navbar-brand img {
+    max-height: 90px;  /* 限制最大高度 */
+    width: auto;       /* 宽度自适应 */
+    margin-right: 150px; /* 保持桌面版的外边距 */
+}
+
+@media (max-width: 768px) { /* 在小于768px的屏幕上调整样式 */
+    .navbar-brand img {
+        max-height: 50px;  /* 在小屏幕上缩小图片 */
+        margin-right: 0;   /* 移除外边距 */
+    }
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+}
+.background-image {
+    background-image: url("image/首頁學校圖-調暗的.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+#news .inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+}
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+}
+.card {
+    border: none !important;
+    box-shadow: none !important;
+    margin-bottom: 20px; /* 增加卡片之间的间隔 */
+}
+.card img {
+    border: none !important;
+    box-shadow: none !important;
+    margin-bottom: 10px; /* 增加照片之间的间隔 */
+}
+.member-section {
+    margin-top: 50px;
+}
+.section-title {
+    font-size: 50px;
+    color: #000;
+    position: relative;
+    display: inline-block;
+}
+.blue-line {
+    border: none;
+    height: 3px;
+    background-color: #0000ff;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.footer-background {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+.footer-logo {
+    margin-right: 15px;
+}
+.footer-text {
+    white-space: nowrap;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 767.98px) {
+    .navbar-brand img {
+        height: 60px;
+        margin-right: 0;
+    }
+    .courseHeaderContainer {
+        font-size: 20px;
+    }
+    .card {
+        flex-direction: column; /* 在小屏幕上垂直排列 */
+        align-items: center; /* 居中对齐 */
+    }
+    .card img {
+        width: 100%; /* 图片宽度为100% */
+        height: auto; /* 高度自适应 */
+    }
+    .card-body {
+        text-align: center; /* 使文字居中 */
+    }
+}
